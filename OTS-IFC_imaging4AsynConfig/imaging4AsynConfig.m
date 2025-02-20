@@ -70,7 +70,6 @@ ImgIndex = reshape(repmat((0 : Width)', 1, ColNum) + repmat(StartPoint, Width + 
 Img = RawData(ImgIndex);   %
 Img = reshape(Img, Width + 1, []);
 %--------------------------------------------------------------------------
-
 figure(1);
 imagesc(Img);
 
