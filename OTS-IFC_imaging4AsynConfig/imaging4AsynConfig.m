@@ -93,7 +93,7 @@ end
 Img = Img - repmat(Background, 1, ColNum);
 %--------------------------------------------------------------------------
 
-%----normalization in 8-bit------------------------------------------------
+%----normalization to 8-bit------------------------------------------------
 waveMax = max(max(Img)); waveMin = min(min(Img));
 Img = (Img - waveMin)*(2^8-1)/(waveMax - waveMin);
 Img = uint8(Img);
